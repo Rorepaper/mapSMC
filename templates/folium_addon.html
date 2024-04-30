@@ -1,0 +1,29 @@
+<label for="marker_name"></label><input id="marker_name" type="text">
+<label for="place"></label><input id="place" type="checkbox">
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        {{map}}.on("click", addMarker);
+
+        function addMarker(e) {
+            if (document.getElementById('place').checked === true) {
+                console.log(document.getElementById('marker_name').value);
+                const marker = new L.marker(e.latlng, {
+                    draggable: true
+                })
+                marker.bindPopup(document.getElementById('marker_name').value).openPopup()
+                marker.addTo({{map}});
+            }
+        }
+    });
+</script>
+<style>
+    #{{map}} {
+        height: 90.0%
+    }
+
+    .leaflet-control-attribution {
+        display: none
+    }
+
+</style>

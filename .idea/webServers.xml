@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="02f612f7-21e7-40d7-91fe-b2bc92bd345e" name="rorepaper">
+        <fileTransfer rootFolder="/home/virtwww/w_rorepaper-ru_625dc55c" accessType="SFTP" host="ftp.rorepaper-ru.1gb.ru" port="22" sshConfigId="460a6b0d-20a6-448d-a931-06e17df607bf" sshConfig="w_rorepaper-ru_625dc55c@ftp.rorepaper-ru.1gb.ru:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
