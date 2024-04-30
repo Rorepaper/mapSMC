@@ -1,0 +1,4 @@
+pillow~=10.2.0
+flask~=3.0.2
+folium~=0.16.0
+branca~=0.7.1
